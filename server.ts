@@ -1,6 +1,7 @@
-var account = require('account.json')
 import { Uptobox } from './src/Uptobox'
 import { DownloadManager } from './src/DownloadManager'
+
+var account = require('./account.json')
 
 var hoster = new Uptobox(account.username, account.password)
 var manager = new DownloadManager(hoster)
