@@ -1,0 +1,21 @@
+{
+  "name": "downloadmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "exit 1",
+    "postinstall": "node node_modules/tsd/build/cli.js install",
+    "prestart": "node node_modules/typescript/lib/tsc.js server.ts",
+    "start": "node server.js"
+  },
+  "author": "Lionel Seguin (lseguin@student.42.fr)",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.0-rc.2",
+    "q": "^1.4.1",
+    "request": "^2.69.0",
+    "tsd": "^0.6.5",
+    "typescript": "^1.8.9"
+  }
+}
