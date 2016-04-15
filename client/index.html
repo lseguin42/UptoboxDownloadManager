@@ -1,0 +1,75 @@
+<html ng-app="downloadManagerApp">
+    <head>
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+        <!-- endinject -->
+        
+        <!-- inject:css -->
+        <!-- endinject -->
+    </head>
+    <body layout="column" ng-controller="AppCtrl as ac">
+        <md-toolbar layout="row">
+            <h3>Uptobox Downloader WebApp</h3>
+        </md-toolbar>
+        
+        <div class="container" layout="row" flex>
+            <md-sidenav md-is-locked-open="true">
+                <md-list>
+                    <md-list-item ng-repeat="menu in ac.menus">
+                        <md-button ng-click="ac.performAction(menu.state)">
+                            <md-icon md-svg-src="{{ menu.icon }}"></md-icon>
+                            {{ menu.title }}
+                        </md-button>
+                    </md-list-item>
+                </md-list>
+            </md-sidenav>
+            <md-content id="content" ui-view flex>
+                Loading...
+            </md-content>
+        </div>
+        
+        <style>
+            md-toolbar {
+                background-color: blue;
+            }
+            md-sidenav {
+                background-color: green;
+            }
+            md-content {
+                background-color: yellow; 
+            }
+        </style>
+        
+        <script src="socket.io/socket.io.js"></script>
+        
+        <!-- build:js app.js -->
+        
+        <!-- bower:js -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="bower_components/crypto-js/index.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.js"></script>
+        <script src="bower_components/angular-material/angular-material.js"></script>
+        <!-- endinject -->
+        
+        <!-- inject:js -->
+        <script src="app.js"></script>
+        <script src="filters/download.js"></script>
+        <script src="models/Download.js"></script>
+        <script src="services/DownloadManager.js"></script>
+        <script src="services/Socket.js"></script>
+        <script src="views/home/home.controller.js"></script>
+        <script src="views/home/home.js"></script>
+        <script src="views/incoming/incoming.controller.js"></script>
+        <script src="views/incoming/incoming.js"></script>
+        <script src="views/progress/progress.controller.js"></script>
+        <script src="views/progress/progress.js"></script>
+        <script src="views/terminate/terminate.controller.js"></script>
+        <script src="views/terminate/terminate.js"></script>
+        <!-- endinject -->
+        
+        <!-- endinject -->
+    </body>
+</html>

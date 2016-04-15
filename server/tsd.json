@@ -1,0 +1,42 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "body-parser/body-parser.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "express/express.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "node/node.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "express-serve-static-core/express-serve-static-core.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "mime/mime.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "q/Q.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "request/request.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "form-data/form-data.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "socket.io/socket.io.d.ts": {
+      "commit": "513510a89acc648422c9abb047265116198f99ee"
+    },
+    "mkdirp/mkdirp.d.ts": {
+      "commit": "8d44da84eb10cdcd2f7ea133f289caef817cb2b9"
+    }
+  }
+}

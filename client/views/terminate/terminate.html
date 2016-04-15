@@ -1,0 +1,8 @@
+<div>
+    <h4>Terminate</h4>
+    <md-list>
+        <md-list-item ng-repeat="download in vm.manager.downloads | downloadFilterByStatus:'terminate'">
+            {{ download.name }} [{{ download.recv | bytes }} / {{ download.size | bytes }}]
+        </md-list-item>
+    </md-list>
+</div>

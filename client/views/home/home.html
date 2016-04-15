@@ -1,0 +1,35 @@
+<div>
+    <form ng-submit="vm.submit()">
+        <textarea ng-model="vm.area" ng-change="vm.areaChange()" style="width: 500px; height: 250px;">
+        </textarea>
+        <ul>
+            <li ng-repeat="link in vm.links">
+                {{link}}
+            </li>
+        </ul>
+        <button type="submit">Add downloads</button>
+    </form>
+    
+    <div>
+        DownloadManagerList:
+        <b>{{ vm.manager.recvBytes | bytes }} / {{ vm.manager.totalBytes | bytes }} [{{ vm.manager.speed | bytes }}/s]</b>
+        <ul>
+            IncomingList:
+            <li ng-repeat="download in vm.manager.downloads | downloadFilterByStatus:'incoming'">
+                {{ download.name }} [{{ download.recv | bytes }} / {{ download.size | bytes }}]
+            </li>
+        </ul>
+        <ul>
+            DownloadingList:
+            <li ng-repeat="download in vm.manager.downloads | downloadFilterByStatus:'progress'">
+                {{ download.name }} [{{ download.recv | bytes }} / {{ download.size | bytes }}] ({{ download.pourcent | pourcent }}) {{ download.speed | bytes }}/s
+            </li>
+        </ul>
+        <ul>
+            TerminateList:
+            <li ng-repeat="download in vm.manager.downloads | downloadFilterByStatus:'terminate'">
+                {{ download.name }} [{{ download.recv | bytes }} / {{ download.size | bytes }}]
+            </li>
+        </ul>
+    </div>
+</div>

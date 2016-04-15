@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "removeComments": false,
+        "noImplicitAny": false
+    },
+    "exclude": [
+        "node_modules",
+        "client/bower_components",
+        "client/typings",
+        "server/typings"
+    ]
+}

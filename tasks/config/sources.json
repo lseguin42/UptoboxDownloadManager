@@ -1,0 +1,5 @@
+[
+    "client/**/*.js",
+    "!client/bower_components/**/*.js",
+    "!client/typings/**/*.js"
+]

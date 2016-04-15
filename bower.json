@@ -1,0 +1,27 @@
+{
+  "name": "downloadmanager",
+  "description": "",
+  "main": "client/index.html",
+  "authors": [
+    "Lionel Seguin (lseguin@student.42.fr)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lseguin42/UptoboxDownloadManager",
+  "moduleType": [
+    "globals"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.3",
+    "angular-ui-router": "ui-router#~0.2.18",
+    "crypto-js": "~3.1.6",
+    "angular-material": "~1.0.7"
+  }
+}
