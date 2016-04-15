@@ -1,5 +1,6 @@
-account.json
+config.json
 node_modules/
+bower_components/
 typings/
 *.js
 npm-debug.log
